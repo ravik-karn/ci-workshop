@@ -5,6 +5,7 @@ deploy:
   env: Sample-env
   provider: s3
   region: us-west-2
+  local_dir: build/libs
   secret_access_key: xeBkr6c7n+cOAp6IHCm2spoU17LEs1pV6R2UkfZk
 
 after_deploy:
