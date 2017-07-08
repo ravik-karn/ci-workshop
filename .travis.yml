@@ -1,6 +1,6 @@
 language: java
 deploy:
-  local_dir: `$TRAVIS_BUILD_DIR`/build/distributions
+  local_dir: %$TRAVIS_BUILD_DIR%/build/distributions
   provider: s3
   access_key_id: AKIAJWOXNQ6EWMJ3XNQQ
   secret_access_key: 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
