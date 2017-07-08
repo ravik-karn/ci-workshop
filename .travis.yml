@@ -1,1 +1,9 @@
 language: java
+deploy:
+  provider: s3
+  access_key_id: AKIAJWOXNQ6EWMJ3XNQQ
+  secret_access_key: xeBkr6c7n+cOAp6IHCm2spoU17LEs1pV6R2UkfZk
+  region: "us-west-2"
+  app: "HelloSpringBoot"
+  env: "Sample-env"
+  bucket: "elasticbeanstalk-us-west-2-217255853952"
