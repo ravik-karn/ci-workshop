@@ -6,7 +6,6 @@ deploy:
   provider: s3
   region: us-west-2
   secret_access_key: xeBkr6c7n+cOAp6IHCm2spoU17LEs1pV6R2UkfZk
-  local_dir: $buildDir/fulljar
 after_deploy:
   - sh ./app_version.sh
 language: java
