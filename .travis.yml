@@ -1,10 +1,5 @@
 install:
-  - pip install awscli
-  - aws configure set aws_access_key_id $AWS_KEY_ID
-  - aws configure set aws_secret_access_key $SECRET_ACCESS_KEY
-  - aws configure set default.region $ACCESS_KEY_REGION
-before_install:
-  - sudo pip install --user awscli
+  - sudo pip install awscli
   - export PATH=$PATH:$HOME/.local/bin
 language: java
 script: ./gradlew build
