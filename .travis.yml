@@ -1,7 +1,6 @@
 install:
   - sudo pip install awscli
-  - export PATH=$PATH:$HOME/.local/bin
 language: java
-script: ./gradlew build
+script: gradle clean build
 after_deploy:
   - sh ./app_version.sh
