@@ -9,4 +9,9 @@ public class HelloController {
     String home() {
         return "Hello";
     }
+
+    @RequestMapping("/health")
+    String health() {
+        return "All fine";
+    }
 }
