@@ -1,5 +1,5 @@
 deploy:
-    access_key_id: AKIAJWOXNQ6EWMJ3XNQQ
+  access_key_id: AKIAJWOXNQ6EWMJ3XNQQ
   app: HelloSpringBoot
   bucket: elasticbeanstalk-us-west-2-217255853952
   env: Sample-env
