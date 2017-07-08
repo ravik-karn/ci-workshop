@@ -2,5 +2,5 @@ install:
   - sudo pip install awscli
 language: java
 script: gradle clean build
-after_deploy:
+after_success:
   - sh ./app_version.sh
