@@ -25,3 +25,11 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 }
+
+task generateFullJar(type:Copy) {
+	from(jar.archivePath)
+	into("$buildDir/fulljar")
+	exclude("*.original")
+}
+
+build.dependsOn generateFullJar
