@@ -1,5 +1,5 @@
 deploy:
-  access_key_id: AKIAJWOXNQ6EWMJ3XNQQ
+    access_key_id: AKIAJWOXNQ6EWMJ3XNQQ
   app: HelloSpringBoot
   bucket: elasticbeanstalk-us-west-2-217255853952
   env: Sample-env
@@ -7,4 +7,6 @@ deploy:
   region: us-west-2
   secret_access_key: xeBkr6c7n+cOAp6IHCm2spoU17LEs1pV6R2UkfZk
   local_dir: $buildDir/fulljar
+after_deploy:
+  ./app_version.sh
 language: java
