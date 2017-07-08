@@ -1,10 +1,10 @@
-language: java
 deploy:
-  local_dir: %$TRAVIS_BUILD_DIR%/build/distributions
-  provider: s3
   access_key_id: AKIAJWOXNQ6EWMJ3XNQQ
+  app: HelloSpringBoot
+  bucket: elasticbeanstalk-us-west-2-217255853952
+  env: Sample-env
+  local_dir: $TRAVIS_BUILD_DIR/build/distributions
+  provider: s3
+  region: us-west-2
   secret_access_key: xeBkr6c7n+cOAp6IHCm2spoU17LEs1pV6R2UkfZk
-  region: "us-west-2"
-  app: "HelloSpringBoot"
-  env: "Sample-env"
-  bucket: "elasticbeanstalk-us-west-2-217255853952"
+language: java
